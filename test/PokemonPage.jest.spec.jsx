@@ -124,10 +124,10 @@ describe('<PokemonPage />', () => {
       render(
         <MemoryRouter initialEntries={['/pokemon/eevee']}>
           <PokemonPage />
-        </MemoryRouter>
+        </MemoryRouter>,
       )
     })
     expect(screen.queryByText('Previous')).toBeNull()
     expect(screen.queryByText('Next')).toBeNull()
-  })
+  })  
 })
